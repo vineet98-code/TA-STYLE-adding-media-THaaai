@@ -14,8 +14,7 @@
     <title>Hydro - Assignment Level 1</title>
 </head>
 <body>
-   <section class="hero"> 
-    <header class="header">
+    <header class="hero padding">
         <div class="container flex">
             <a class="logo" href="#">hydro</a>
             <nav class="nav-menu ">
@@ -37,51 +36,76 @@
             </button>
         </div>
     </header> 
-   </section>
-   <main>
+    <main>
        <section class="first"> 
             <div class="container flex">
-               <div class="col">
-                  <h1>we make beautiful <br> websites for all people.</h1>
-                  <div class="flex-center">
-                    <button class="btn hero-btn">
-                        <a href="#">Start a project</a>
-                    </button>
-                    <address>call us (+86)010-020-0340 <br> For any query</address>
+               <div class="col hero-content">
+                  <h1 class="heading">we make beautiful websites for all people.</h1>
+                  <div class="flex justify-start">
+                    <a class= "btn hero-btn" href="#">Start a project</a>
+                    
+                    <address>call us (+86) 010-020-0340 <br>For any query</address>
                   </div>
                 </div>
-              
-               <iframe width="900" height="506" src="https://www.youtube.com/embed/AqcjdkPMPJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <figure class="col">
+                 <iframe width="900" height="506" src="https://www.youtube.com/embed/AqcjdkPMPJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </figure>
             </div>
        </section> 
-       <section class="introduce-section">
-           <div class="container flex">
-               <article class="col-1">
-                <h2 class="h2">Let us introduce</h2>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et 
+       <section class="introduction-section padding">
+           <div class="container flex align-start">
+               <article class="flex-40">
+                   <header class="sec-header">
+                    <h2 class="h2">Let us introduce</h2>
+                    <div class="dot">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                   </header>
+                
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et 
                     possimus neque blanditiis, velit ad eligendi ipsum enim amet architecto ex.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vitae!</p>    
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vitae!</p>    
                </article>
 
-                <div class="col-1">
-                    <div class="flex-center">
-                        <div>
-                         <h3>web design</h3>
-                         <div class="line"></div>
-                         </div>
-                         <span>85%</span> 
-                    </div>  
+                <div class="flex-30 progress">
+                    <div class="progress-items">
+                        <div class="flex">
+                           <h3>web design</h3>
+                           <p>85%</p>
+                        </div>
+                        <progress value="85" max="100"></progress>
+                    </div>
+                    <div class="progress-items">
+                        <div class="flex">
+                           <h3>photography</h3>
+                           <p>90%</p>
+                        </div>
+                        <progress value="85" max="100"></progress>
+                    </div> 
+                    <div class="progress-items">
+                        <div class="flex">
+                           <h3>content marketing</h3>
+                           <p>75%</p>
+                        </div>
+                        <progress value="85" max="100"></progress>
+                    </div> 
+                    <div class="progress-items">
+                        <div class="flex">
+                           <h3>cms admin</h3>
+                           <p>70%</p>
+                        </div>
+                        <progress value="85" max="100"></progress>
+                    </div>   
                 </div> 
                 
-                <div class="col-1">
-                    <img src="assets/media/about-image.jpg" alt="man with green t-shirt">
+                <div class="flex-30">
+                    <img class="introduce-img" src="assets/media/about-image.jpg" alt="man with green t-shirt">
                 </div>
             </div>
         </section>
-        <section class="blog">
+        <section class="blog padding">
           <div class="container ">
             <h2 class="sub-heading">our blog</h2>
             <div class="dot">
@@ -132,7 +156,7 @@
                 </div>
             </div>
         </section>
-        <section class="work">
+        <section class="work padding">
             <div class="container">
                 <h2 class="sub-heading ">our work</h2>
                 <div class="dot">
@@ -159,7 +183,7 @@
                 </div>
             </div>     
         </section>
-        <section class="contact">
+        <section class="contact padding">
             <div class="container">
                 <h2 class="sub-heading white">contact us</h2>
                 <div class="dot">
@@ -199,14 +223,14 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer padding">
         <div class="container">
-          <div class="footer-header flex">
-            <div>
+          <div class="footer-header flex align-start">
+            <div class="flex-40">
                 <h2 class="sub-heading white">hydro company</h2>
                 <p class="footer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel quam excepturi at non nihil rerum porro officia error exercitationem laudantium?</p>
             </div>
-            <div>
+            <div class="flex-20">
                 <h2 class="sub-heading white">company</h2>
                 <nav class="footer-header-nav">
                     <ul>
@@ -217,7 +241,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="footer-header">
+            <div class="flex-20">
                 <h2 class="sub-heading white">services</h2>
                 <nav class="footer-header-nav">
                     <ul>
@@ -227,7 +251,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="footer-header">
+            <div class="flex-20">
                 <h2 class="sub-heading white">find us</h2> 
                 <h6>123 grand rama ix</h6>
                 <h6>krung thep maha nakhon 10400</h6>
